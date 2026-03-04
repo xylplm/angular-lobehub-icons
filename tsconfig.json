@@ -16,7 +16,7 @@
     "target": "ES2022",
     "module": "es2022",
     "paths": {
-      "angular-border-avatar": [
+      "angular-lobehub-icons": [
         "projects/angular-lobehub-icons/src/public-api"
       ]
     },
