@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "首页",
+    "docs": "文档",
+    "examples": "示例"
+  },
+  "home": {
+    "title": "LobHub 图标",
+    "subtitle": "为 Angular 应用提供的美观、完整的图标库",
+    "about": "关于 LobHub Icons",
+    "description": "LobHub Icons 是一个美观易用的 Angular 图标库，完全支持 TypeScript。它为你的 Angular 应用提供了丰富的图标组件，拥有海量精美的图标。",
+    "quickStart": "快速开始",
+    "icons": "精选图标",
+    "features": {
+      "icons": {
+        "title": "完整的图标库",
+        "desc": "访问来自 LobHub Icons 的大量高质量 SVG 图标"
+      },
+      "tree": {
+        "title": "可树摇",
+        "desc": "只引入你需要的图标，减少包体积"
+      },
+      "lightweight": {
+        "title": "轻量级",
+        "desc": "最小的开销和出色的性能表现"
+      },
+      "custom": {
+        "title": "高度可定制",
+        "desc": "轻松自定义大小、颜色等样式属性"
+      }
+    }
+  },
+  "docs": {
+    "title": "文档",
+    "installation": {
+      "title": "安装",
+      "desc": "通过 npm 或 yarn 安装包"
+    },
+    "usage": {
+      "title": "基本用法",
+      "desc": "在模板中使用图标组件",
+      "code": "<i-lobehub name=\"air\"></i-lobehub>"
+    },
+    "standalone": {
+      "title": "Standalone API",
+      "desc": "与 Angular 的 Standalone 组件配合使用",
+      "code": "import { LobehubIconComponent, provideLobehubIcons } from '@luoxiao123/angular-lobehub-icons';"
+    },
+    "styling": {
+      "title": "图标样式",
+      "desc": "使用 CSS 属性自定义图标"
+    }
+  },
+  "examples": {
+    "title": "示例",
+    "basic": {
+      "title": "基础图标"
+    },
+    "sizing": {
+      "title": "图标尺寸"
+    },
+    "coloring": {
+      "title": "图标着色"
+    },
+    "standalone": {
+      "title": "Standalone 组件示例",
+      "desc": "在 Standalone 组件中使用 LobHub Icons 的示例"
+    }
+  },
+  "footer": "© 2024 Angular LobHub Icons。MIT 许可证。"
+}

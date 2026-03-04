@@ -1,0 +1,70 @@
+<!-- 项目介绍 -->
+<section class="intro-section">
+  <div class="section-content">
+    <div class="intro-hero">
+      <h2>{{ 'home.title' | translate }}</h2>
+      <p class="hero-subtitle">{{ 'home.subtitle' | translate }}</p>
+    </div>
+    <div class="intro-text">
+      <h3>{{ 'home.about' | translate }}</h3>
+      <p>{{ 'home.description' | translate }}</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i-lobehub name="code"></i-lobehub>
+        </div>
+        <h3>{{ 'home.features.icons.title' | translate }}</h3>
+        <p>{{ 'home.features.icons.desc' | translate }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i-lobehub name="archive"></i-lobehub>
+        </div>
+        <h3>{{ 'home.features.tree.title' | translate }}</h3>
+        <p>{{ 'home.features.tree.desc' | translate }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i-lobehub name="air"></i-lobehub>
+        </div>
+        <h3>{{ 'home.features.lightweight.title' | translate }}</h3>
+        <p>{{ 'home.features.lightweight.desc' | translate }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i-lobehub name="api"></i-lobehub>
+        </div>
+        <h3>{{ 'home.features.custom.title' | translate }}</h3>
+        <p>{{ 'home.features.custom.desc' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 快速开始 -->
+<section class="quick-start-section">
+  <div class="section-content">
+    <h2>{{ 'home.quickStart' | translate }}</h2>
+    <div class="code-block">
+      <code>npm install @luoxiao123/angular-lobehub-icons</code>
+    </div>
+  </div>
+</section>
+
+<!-- 图标示例 -->
+<section class="icons-section">
+  <div class="section-content">
+    <h2>{{ 'home.icons' | translate }}</h2>
+    <div class="icons-grid">
+      @for (example of iconExamples; track example.name) {
+        <div class="icon-item">
+          <div class="icon-display">
+            <i-lobehub [attr.name]="example.name"></i-lobehub>
+          </div>
+          <span>{{ getIconLabel(example) }}</span>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+name: Automatic PR on LobHub Icons Release
+
+on: 
+  workflow_dispatch:
+    inputs:
+      lobehub_version:
+        description: 'LobHub Icons Version (x.y.z)'     
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Set Angular library version
+        working-directory: ./projects/angular-lobehub-icons
+        run: npm version ${{ github.event.inputs.lobehub_version }} --git-tag-version=false
+      - name: Install dependencies
+        run: npm ci
+      - name: Update LobHub Icons version
+        run: |
+          sed -r -i 's/LobHub%20Icons-v[0-9.]+-/LobHub%20Icons-v${{ github.event.inputs.lobehub_version }}-/' README.md
+          sed -r -i 's/LobHub Icons v[0-9.]+/LobHub Icons v${{ github.event.inputs.lobehub_version }}/' README.md
+          sed -r -i 's/LobHub%20Icons-v[0-9.]+-/LobHub%20Icons-v${{ github.event.inputs.lobehub_version }}-/' README.zh.md
+          sed -r -i 's/LobHub Icons v[0-9.]+/LobHub Icons v${{ github.event.inputs.lobehub_version }}/' README.zh.md
+          npm install @lobehub/icons-static-svg@${{ github.event.inputs.lobehub_version }}
+      - name: Rebuild icons
+        run: npm run lib:generate
+      - name: Setup git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: "[AUTO] LobHub Icons v${{ github.event.inputs.lobehub_version }}"
+          body: "Automated changes by GitHub action workflow for LobHub Icons v${{ github.event.inputs.lobehub_version }} integration."
+          labels: "lobehub release"
+          commit-message: "LobHub Icons v${{ github.event.inputs.lobehub_version }}"
+          branch: "release/${{ github.event.inputs.lobehub_version }}"
+          delete-branch: true
+          reviewers: "xylplm"

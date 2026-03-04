@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "docs": "Documentation",
+    "examples": "Examples"
+  },
+  "home": {
+    "title": "LobHub Icons",
+    "subtitle": "Beautiful, comprehensive icon library for Angular applications",
+    "about": "About LobHub Icons",
+    "description": "LobHub Icons is a beautiful and easy-to-use Angular icon library with full TypeScript support. It provides icon components for your Angular application with a wide range of stunning icons.",
+    "quickStart": "Quick Start",
+    "icons": "Featured Icons",
+    "features": {
+      "icons": {
+        "title": "Comprehensive Icons",
+        "desc": "Access to a large collection of high-quality SVG icons from LobHub Icons"
+      },
+      "tree": {
+        "title": "Tree Shakeable",
+        "desc": "Only import the icons you need, reducing bundle size"
+      },
+      "lightweight": {
+        "title": "Lightweight",
+        "desc": "Minimal overhead with excellent performance"
+      },
+      "custom": {
+        "title": "Customizable",
+        "desc": "Easy to customize size, color, and other styling properties"
+      }
+    }
+  },
+  "docs": {
+    "title": "Documentation",
+    "installation": {
+      "title": "Installation",
+      "desc": "Install the package via npm or yarn"
+    },
+    "usage": {
+      "title": "Basic Usage",
+      "desc": "Use the icon component in your templates",
+      "code": "<i-lobehub name=\"air\"></i-lobehub>"
+    },
+    "standalone": {
+      "title": "Standalone API",
+      "desc": "Use with Angular's standalone components",
+      "code": "import { LobehubIconComponent, provideLobehubIcons } from '@luoxiao123/angular-lobehub-icons';"
+    },
+    "styling": {
+      "title": "Styling Icons",
+      "desc": "Customize icons with CSS properties"
+    }
+  },
+  "examples": {
+    "title": "Examples",
+    "basic": {
+      "title": "Basic Icon"
+    },
+    "sizing": {
+      "title": "Icon Sizing"
+    },
+    "coloring": {
+      "title": "Icon Coloring"
+    },
+    "standalone": {
+      "title": "Standalone Component Example",
+      "desc": "Example of using LobHub Icons in a standalone component"
+    }
+  },
+  "footer": "© 2024 Angular LobHub Icons. MIT License."
+}
