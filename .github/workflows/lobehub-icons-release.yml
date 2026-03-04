@@ -7,10 +7,6 @@ on:
         description: 'LobHub Icons Version (x.y.z)'     
         required: true
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -43,7 +39,6 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           title: "[AUTO] LobHub Icons v${{ github.event.inputs.lobehub_version }}"
           body: "Automated changes by GitHub action workflow for LobHub Icons v${{ github.event.inputs.lobehub_version }} integration."
           labels: "lobehub release"
