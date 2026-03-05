@@ -1,1 +1,1 @@
-export const IconVllm = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><title>vLLM</title><path d="M0 4.973h9.324V23L0 4.973z"></path><path d="M13.986 4.351L22.378 0l-6.216 23H9.324l4.662-18.649z"></path></svg>`
+export const IconVllm = `<svg fill="currentColor" fill-rule="evenodd" style="flex:none;line-height:1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>vLLM</title><path d="M0 4.973h9.324V23L0 4.973z"></path><path d="M13.986 4.351L22.378 0l-6.216 23H9.324l4.662-18.649z"></path></svg>`

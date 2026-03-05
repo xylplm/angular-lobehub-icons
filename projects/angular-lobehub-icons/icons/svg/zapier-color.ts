@@ -1,1 +1,1 @@
-export const IconZapierColor = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><title>Zapier</title><path d="M18.5 16h-13v3h13v-3z" fill="#FF4F00"></path></svg>`
+export const IconZapierColor = `<svg style="flex:none;line-height:1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Zapier</title><path d="M18.5 16h-13v3h13v-3z" fill="#FF4F00"></path></svg>`

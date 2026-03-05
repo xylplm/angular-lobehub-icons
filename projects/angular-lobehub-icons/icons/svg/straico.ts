@@ -1,1 +1,1 @@
-export const IconStraico = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><title>Straico</title><path d="M22 6h-5.278l3.166-6h-8.443L3 16h6.333v8L22 6z"></path></svg>`
+export const IconStraico = `<svg fill="currentColor" fill-rule="evenodd" style="flex:none;line-height:1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Straico</title><path d="M22 6h-5.278l3.166-6h-8.443L3 16h6.333v8L22 6z"></path></svg>`

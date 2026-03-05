@@ -75,7 +75,9 @@ async function generate() {
       const iconNameCamel = uppercamelcase('icon-' + iconNameHyphens);
 
       const svgRaw = await readFile(file.path, 'utf-8');
-      const svg = svgRaw.replaceAll('\n', '');
+      const svg = svgRaw
+        .replaceAll('\n', '')
+        .replace(/\s+(height|width)="1em"/g, '');
       const component = `export const ${iconNameCamel} = \`${svg}\``;
 
       await writeFile(`${PATHS.ICONS_DEST}/${iconNameHyphens}.ts`, component, 'utf-8');

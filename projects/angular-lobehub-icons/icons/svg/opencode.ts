@@ -1,1 +1,1 @@
-export const IconOpencode = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><title>opencode</title><path d="M16 6H8v12h8V6zm4 16H4V2h16v20z"></path></svg>`
+export const IconOpencode = `<svg fill="currentColor" fill-rule="evenodd" style="flex:none;line-height:1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>opencode</title><path d="M16 6H8v12h8V6zm4 16H4V2h16v20z"></path></svg>`
