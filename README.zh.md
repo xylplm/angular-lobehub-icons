@@ -10,7 +10,7 @@
 
 # Angular LobHub 图标库
 
-> 一个围绕 [@lobehub/icons](https://github.com/lobehub/lobe-icons) 打造的 Angular 图标组件库，为你的 Angular 应用提供数千个精心设计的、可自定义的图标。
+一个 Angular 图标组件库 - AI/LLM 模型品牌 SVG Logo 和图标的专业集合，为你的 Angular 应用提供精心设计的专业图标，基于 [@lobehub/icons](https://github.com/lobehub/lobe-icons) 打造。
 
 [![npm version](https://img.shields.io/npm/v/@luoxiao123/angular-lobehub-icons.svg?style=flat-square)](https://www.npmjs.com/package/@luoxiao123/angular-lobehub-icons)
 [![npm downloads](https://img.shields.io/npm/dm/@luoxiao123/angular-lobehub-icons.svg?style=flat-square)](https://www.npmjs.com/package/@luoxiao123/angular-lobehub-icons)
@@ -18,18 +18,22 @@
 
 ## ⚡ 项目介绍
 
-这是 [**LobHub 图标库**](https://github.com/lobehub/lobe-icons) 的 Angular 包装器，该项目提供：
+这是 [**LobHub 图标库**](https://github.com/lobehub/lobe-icons) 的 Angular 包装器，专业的 AI 相关图标库，该项目提供：
 
-- 🎨 **丰富的图标集合** - 数千个专业设计的图标，覆盖各种分类
+- 🎨 **AI/LLM 图标集合** - 专业设计的 AI 模型、工具和科技品牌图标
 - 🌈 **多种变体** - 每个图标都有彩色、轮廓和文字变体
-- 🧠 **AI 和技术图标** - 专为 AI 模型、工具和科技品牌设计的图标
+- 🧠 **AI 专业聚焦** - 专为 AI 模型、工具和科技品牌设计的图标
 - 📦 **基于 SVG** - 单纯的 SVG 图标，在任何尺寸下都能获得清晰的质量
 - 🔄 **定期更新** - 定期添加新图标，紧跟最新技术发展
 
 > 访问 [LobHub 图标库](https://github.com/lobehub/lobe-icons) 查看完整的图标展示和文档。
+
 <div align="center">
+
 ![](https://github.com/lobehub/lobe-icons/assets/17870709/7e2c56d2-d7ea-4cb8-842b-22de162d6486)
+
 </div>
+
 ## 📦 安装
 
 ```bash
