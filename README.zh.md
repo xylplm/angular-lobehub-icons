@@ -40,7 +40,7 @@ import * as LobehubIcons from '@luoxiao123/angular-lobehub-icons';
   standalone: true,
   imports: [LobehubIconsModule],
   template: `
-    <lobehub-icon name="air"></lobehub-icon>
+    <lobehub-icon name="openai"></lobehub-icon>
   `,
 })
 export class AppComponent {
@@ -56,7 +56,7 @@ export class AppComponent {
 你也可以使用指令方式：
 
 ```html
-<i-lobehub name="air"></i-lobehub>
+<i-lobehub name="openai"></i-lobehub>
 ```
 
 ### 使用 Standalone API（推荐）
@@ -73,7 +73,7 @@ import * as LobehubIcons from '@luoxiao123/angular-lobehub-icons';
   standalone: true,
   imports: [LobehubIconComponent],
   providers: [provideLobehubIcons(LobehubIcons)],
-  template: `<lobehub-icon name="air"></lobehub-icon>`,
+  template: `<lobehub-icon name="openai"></lobehub-icon>`,
 })
 export class AppComponent {}
 ```

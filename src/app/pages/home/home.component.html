@@ -12,28 +12,28 @@
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">
-          <i-lobehub name="code"></i-lobehub>
+          <i-lobehub name="github"></i-lobehub>
         </div>
         <h3>{{ 'home.features.icons.title' | translate }}</h3>
         <p>{{ 'home.features.icons.desc' | translate }}</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">
-          <i-lobehub name="archive"></i-lobehub>
+          <i-lobehub name="lobehub"></i-lobehub>
         </div>
         <h3>{{ 'home.features.tree.title' | translate }}</h3>
         <p>{{ 'home.features.tree.desc' | translate }}</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">
-          <i-lobehub name="air"></i-lobehub>
+          <i-lobehub name="openai"></i-lobehub>
         </div>
         <h3>{{ 'home.features.lightweight.title' | translate }}</h3>
         <p>{{ 'home.features.lightweight.desc' | translate }}</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">
-          <i-lobehub name="api"></i-lobehub>
+          <i-lobehub name="deepseek"></i-lobehub>
         </div>
         <h3>{{ 'home.features.custom.title' | translate }}</h3>
         <p>{{ 'home.features.custom.desc' | translate }}</p>
@@ -60,7 +60,7 @@
       @for (example of iconExamples; track example.name) {
         <div class="icon-item">
           <div class="icon-display">
-            <i-lobehub [attr.name]="example.name"></i-lobehub>
+            <i-lobehub [name]="example.name"></i-lobehub>
           </div>
           <span>{{ getIconLabel(example) }}</span>
         </div>

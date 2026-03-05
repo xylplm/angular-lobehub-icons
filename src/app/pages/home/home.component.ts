@@ -16,12 +16,12 @@ export class HomeComponent {
   private translate = inject(TranslateService);
   
   iconExamples = [
-    { name: 'air', en: 'Air', zh: '空气' },
-    { name: 'api', en: 'API', zh: 'API' },
-    { name: 'archive', en: 'Archive', zh: '存档' },
+    { name: 'openai', en: 'OpenAI', zh: 'OpenAI' },
+    { name: 'deepseek', en: 'DeepSeek', zh: 'DeepSeek' },
+    { name: 'claude', en: 'Claude', zh: 'Claude' },
     { name: 'github', en: 'GitHub', zh: 'GitHub' },
-    { name: 'world', en: 'World', zh: '世界' },
-    { name: 'search', en: 'Search', zh: '搜索' },
+    { name: 'googlecloud', en: 'Google Cloud', zh: '谷歌云' },
+    { name: 'notebooklm', en: 'NotebookLM', zh: 'NotebookLM' },
   ];
 
   constructor() {

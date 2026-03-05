@@ -18,6 +18,9 @@
     "paths": {
       "angular-lobehub-icons": [
         "projects/angular-lobehub-icons/src/public-api"
+      ],
+      "angular-lobehub-icons/icons": [
+        "projects/angular-lobehub-icons/icons/index"
       ]
     },
     "useDefineForClassFields": false

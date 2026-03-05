@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { LobehubIconComponent, provideLobehubIcons } from 'angular-lobehub-icons';
 import {
-  IconAir,
-  IconApi,
-  IconArchive,
   IconGithub,
-  IconWorld,
+  IconOpenai,
+  IconClaude,
+  IconGooglecloud,
+  IconLobehub,
 } from 'angular-lobehub-icons/icons';
 
 @Component({
@@ -17,50 +17,50 @@ import {
          * Provide the icons which you want to use in this component.
          */
         provideLobehubIcons({
-            IconAir,
-            IconApi,
-            IconArchive,
             IconGithub,
-            IconWorld,
+            IconOpenai,
+            IconClaude,
+            IconGooglecloud,
+            IconLobehub,
         }),
     ],
     template: `
     <div class="examples-grid">
       <fieldset>
-        <legend>Air</legend>
-        <i-lobehub name="air"></i-lobehub>
+        <legend>GitHub</legend>
+        <i-lobehub name="github"></i-lobehub>
       </fieldset>
 
       <fieldset>
-        <legend>Air (large)</legend>
-        <i-lobehub name="air" style="height: 60px; width: 60px;"></i-lobehub>
+        <legend>GitHub (large)</legend>
+        <i-lobehub name="github" style="height: 60px; width: 60px;"></i-lobehub>
       </fieldset>
 
       <fieldset>
-        <legend>API (style, blue)</legend>
-        <i-lobehub name="api" style="color: #4facfe;"></i-lobehub>
+        <legend>OpenAI (style, blue)</legend>
+        <i-lobehub name="openai" style="color: #4facfe;"></i-lobehub>
       </fieldset>
 
       <fieldset>
-        <legend>Archive (style, purple)</legend>
-        <i-lobehub name="archive" style="color: #764ba2;"></i-lobehub>
+        <legend>Claude (style, purple)</legend>
+        <i-lobehub name="claude" style="color: #764ba2;"></i-lobehub>
       </fieldset>
 
       <fieldset>
-        <legend>GitHub (style, large)</legend>
-        <i-lobehub name="github" style="color: #333; height: 60px; width: 60px;"></i-lobehub>
+        <legend>Google Cloud (style, large)</legend>
+        <i-lobehub name="googlecloud" style="color: #333; height: 60px; width: 60px;"></i-lobehub>
       </fieldset>
 
       <fieldset>
-        <legend>World (style, gradient)</legend>
-        <i-lobehub name="world" style="color: #667eea;"></i-lobehub>
+        <legend>LobehHub (style, gradient)</legend>
+        <i-lobehub name="lobehub" style="color: #667eea;"></i-lobehub>
       </fieldset>
     </div>
     `,
     styles: [`
       .examples-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
       }
 

@@ -20,7 +20,7 @@ import { upperCamelCase } from './utils';
  *
  * @example
  * ```html
- * <lobehub-icon name="air"></lobehub-icon>
+ * <lobehub-icon name="openai"></lobehub-icon>
  * ```
  *
  * @remarks
@@ -48,9 +48,9 @@ export class LobehubIconComponent {
   /**
    * Icon name in kebab-case format.
    * @example
-   * - "air"
-   * - "api"
-   * - "archive"
+   * - "openai"
+   * - "deepseek"
+   * - "claude"
    * etc
    */
   readonly name = input.required<string>();
