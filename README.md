@@ -34,6 +34,17 @@ This project is an Angular wrapper for [**LobHub Icons**](https://github.com/lob
 
 </div>
 
+## 🎯 Features
+
+- ✨ **Easy to use** - Simple component and directive APIs for quick integration
+- 🎨 **Customizable** - Full support for colors, sizes, and custom styling
+- 📦 **Tree-shakeable** - Only bundle the icons you use
+- 🔧 **TypeScript support** - Fully typed for excellent IDE support
+- 🎭 **Standalone components** - Works seamlessly with Angular standalone API
+- 💪 **Type-safe** - Compile-time icon name checking
+- 🚀 **Performance optimized** - Efficient rendering with OnPush change detection
+- 🌍 **Comprehensive coverage** - Access to thousands of icons from LobHub
+
 ## 📦 Installation
 
 ```bash
@@ -109,17 +120,6 @@ export class AppComponent {}
 ## 📖 Documentation
 
 For more examples and detailed documentation, please visit the [GitHub repository](https://github.com/xylplm/angular-lobehub-icons).
-
-## 🎯 Features
-
-- ✨ **Easy to use** - Simple component and directive APIs for quick integration
-- 🎨 **Customizable** - Full support for colors, sizes, and custom styling
-- 📦 **Tree-shakeable** - Only bundle the icons you use
-- 🔧 **TypeScript support** - Fully typed for excellent IDE support
-- 🎭 **Standalone components** - Works seamlessly with Angular standalone API
-- 💪 **Type-safe** - Compile-time icon name checking
-- 🚀 **Performance optimized** - Efficient rendering with OnPush change detection
-- 🌍 **Comprehensive coverage** - Access to thousands of icons from LobHub
 
 ## 🔗 Related Projects
 
