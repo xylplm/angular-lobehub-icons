@@ -1,9 +1,9 @@
 <section class="examples-section">
   <div class="section-content">
-    <h2>{{ 'examples.title' | translate }}</h2>
+    <h2>{{ title() }}</h2>
 
     <article class="example-article">
-      <h3>{{ 'examples.basic.title' | translate }}</h3>
+      <h3>{{ basicTitle() }}</h3>
       <div class="example-content">
         <div class="demo">
           <i-lobehub name="github"></i-lobehub>
@@ -15,7 +15,7 @@
     </article>
 
     <article class="example-article">
-      <h3>{{ 'examples.sizing.title' | translate }}</h3>
+      <h3>{{ sizingTitle() }}</h3>
       <div class="example-content">
         <div class="demo">
           <div class="size-demo">
@@ -41,7 +41,7 @@
     </article>
 
     <article class="example-article">
-      <h3>{{ 'examples.coloring.title' | translate }}</h3>
+      <h3>{{ coloringTitle() }}</h3>
       <div class="example-content">
         <div class="demo">
           <div class="color-demo">
@@ -67,8 +67,8 @@
     </article>
 
     <article class="example-article">
-      <h3>{{ 'examples.standalone.title' | translate }}</h3>
-      <p>{{ 'examples.standalone.desc' | translate }}</p>
+      <h3>{{ standaloneTitle() }}</h3>
+      <p>{{ standaloneDesc() }}</p>
       <app-standalone></app-standalone>
     </article>
   </div>

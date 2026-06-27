@@ -1,27 +1,26 @@
 <div class="app-container">
-  <!-- 顶部导航 -->
   <header class="header">
     <div class="header-content">
       <div class="logo-section">
         <i-lobehub name="lobehub-color" class="logo-icon"></i-lobehub>
-        <h1>{{ 'home.title' | translate }}</h1>
+        <h1>{{ homeTitle() }}</h1>
       </div>
       <nav class="nav-menu">
-        @for (page of navPages; track $index) {
-          <a 
+        @for (page of navPages; track page) {
+          <a
             [routerLink]="['/', page]"
             routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: page === 'home' ? true : false }"
+            [routerLinkActiveOptions]="{ exact: page === 'home' }"
             class="nav-btn">
-            {{ ('nav.' + page) | translate }}
+            {{ navLabel(page)() }}
           </a>
         }
       </nav>
       <div class="nav-actions">
-        <button class="lang-btn" (click)="toggleLanguage()">
-          {{ currentLanguage === 'en' ? '中文' : 'EN' }}
+        <button type="button" class="lang-btn" (click)="toggleLanguage()">
+          {{ langToggleLabel() }}
         </button>
-        <a href="https://github.com/xylplm/angular-lobehub-icons" target="_blank" class="btn btn-secondary">
+        <a href="https://github.com/xylplm/angular-lobehub-icons" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
           <i-lobehub name="github"></i-lobehub>
           GitHub
         </a>
@@ -29,15 +28,13 @@
     </div>
   </header>
 
-  <!-- 主要内容 -->
   <main class="main-content">
     <router-outlet></router-outlet>
   </main>
 
-  <!-- 底部 -->
   <footer class="footer">
     <div class="footer-content">
-      <p>{{ 'footer' | translate }}</p>
+      <p>{{ footer() }}</p>
     </div>
   </footer>
 </div>

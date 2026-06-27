@@ -1,15 +1,19 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { LobehubIconComponent } from 'angular-lobehub-icons';
-import { TranslatePipe } from '@ngx-translate/core';
 import { StandaloneComponent } from '../../standalone/standalone.component';
+import { t } from '../../i18n/translate-signals';
 
 @Component({
   selector: 'app-examples',
-  standalone: true,
-  imports: [LobehubIconComponent, CommonModule, TranslatePipe, StandaloneComponent],
+  imports: [LobehubIconComponent, StandaloneComponent],
   templateUrl: './examples.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./examples.component.scss'],
 })
-export class ExamplesComponent {}
+export class ExamplesComponent {
+  readonly title = t('examples.title');
+  readonly basicTitle = t('examples.basic.title');
+  readonly sizingTitle = t('examples.sizing.title');
+  readonly coloringTitle = t('examples.coloring.title');
+  readonly standaloneTitle = t('examples.standalone.title');
+  readonly standaloneDesc = t('examples.standalone.desc');
+}
