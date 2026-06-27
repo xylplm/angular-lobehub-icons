@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { LobehubIconComponent, provideLobehubIcons } from 'angular-lobehub-icons';
 import {
   IconGithub,
@@ -57,6 +57,7 @@ import {
       </fieldset>
     </div>
     `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     styles: [`
       .examples-grid {
         display: grid;

@@ -6,7 +6,7 @@ import { By } from '@angular/platform-browser';
 
 // Test Host Component
 @Component({
-  selector: 'app-test-host',
+  selector: 'lobehub-icons-test-host',
   template: `<lobehub-icon [name]="iconName" class="test-icon"></lobehub-icon>`,
   imports: [LobehubIconComponent],
 })

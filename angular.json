@@ -27,8 +27,10 @@
         "test": {
           "builder": "@angular/build:unit-test",
           "options": {
-            "include": ["projects/angular-lobehub-icons/src/**/*.spec.ts"],
-            "setupFiles": ["projects/angular-lobehub-icons/src/test.ts"]
+            "include": [
+              "projects/angular-lobehub-icons/src/**/*.spec.ts"
+            ],
+            "tsConfig": "projects/angular-lobehub-icons/tsconfig.spec.json"
           }
         },
         "lint": {
