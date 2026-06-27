@@ -1,20 +1,21 @@
-import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LobehubIconComponent } from 'angular-lobehub-icons';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [LobehubIconComponent, CommonModule, TranslateModule],
+  imports: [LobehubIconComponent, CommonModule, TranslatePipe],
   templateUrl: './home.component.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
   currentLanguage: 'en' | 'zh' = 'en';
   
   private translate = inject(TranslateService);
+  private cdr = inject(ChangeDetectorRef);
   
   iconExamples = [
     { name: 'openai', en: 'OpenAI', zh: 'OpenAI' },
@@ -28,6 +29,7 @@ export class HomeComponent {
   constructor() {
     this.translate.onLangChange.subscribe((event) => {
       this.currentLanguage = event.lang as 'en' | 'zh';
+      this.cdr.markForCheck();
     });
   }
 

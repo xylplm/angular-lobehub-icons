@@ -57,7 +57,7 @@ import {
       </fieldset>
     </div>
     `,
-    changeDetection: ChangeDetectionStrategy.Eager,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     styles: [`
       .examples-grid {
         display: grid;
